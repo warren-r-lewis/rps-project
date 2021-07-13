@@ -16,8 +16,6 @@ Object.freeze(Outcomes);
 
 
 class Round{
-    playerSelection;
-    computerSelection;
 
     constructor(playerSelection){
         this.playerSelection = playerSelection;
@@ -50,4 +48,4 @@ class Round{
 
 
 //DO NOT TOUCH THIS LINE OF CODE//
-let unit_test = Round;
+let unit_test1 = Round;
