@@ -1,9 +1,10 @@
 class Game{
-    numberOfRounds = null;
-    countOfPlayerWins = 0;
-    countOfComputerWins = 0;
-    countOfTies = 0;
-
+    constructor(){
+        this.numberOfRounds = null;
+        this.countOfPlayerWins = 0;
+        this.countOfComputerWins = 0;
+        this.countOfTies = 0;
+    }
     incrementPlayerWins(){
         //*********************************ADD CODE HERE *************************************/
         // Add 1 to the countOfPlayerWins property

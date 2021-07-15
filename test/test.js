@@ -3,7 +3,7 @@ var sinon = require('sinon');
 var rewire = require('rewire');
 const { expect, assert } = require('chai');
 
-let Round = rewire('../rps/round.js').__get__('unit_test');
+let Round = rewire('../rps/round.js').__get__('unit_test1');
 let Game =  rewire('../rps/game.js').__get__('unit_test');
 
 
