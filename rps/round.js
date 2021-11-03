@@ -62,10 +62,10 @@ class Round{
         else if((this.playerSelection == Selections.ROCK) && (this.computerSelection == Selections.SCISSORS)){
             var outcome = Outcomes.PLAYER_WINS;
         }
-        else if((this.playerSelection == Selections.PAPER) && (this.computerSelection == Selections.PAPER)){
+        else if((this.playerSelection == Selections.PAPER) && (this.computerSelection == Selections.ROCK)){
             var outcome = Outcomes.PLAYER_WINS;
         }
-        else if((this.playerSelection == Selections.ROCK) && (this.computerSelection == Selections.SCISSORS)){
+        else if((this.playerSelection == Selections.SCISSORS) && (this.computerSelection == Selections.PAPER)){
             var outcome = Outcomes.PLAYER_WINS;
         }
         else {
