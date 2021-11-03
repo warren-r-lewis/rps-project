@@ -72,18 +72,6 @@ class Round{
             var outcome = Outcomes.COMPUTER_WINS;
         }
 
-        switch(outcome){
-            case Outcomes.PLAYER_WINS:
-            game.incrementPlayerWins();
-            break;
-            case Outcomes.COMPUTER_WINS:
-            game.incrementComputerWins();
-            break;
-            case Outcomes.TIE:
-            game.incrementCountOfTies();
-            break;
-        }
-        console.log(outcome);
         return outcome;
     }
 
