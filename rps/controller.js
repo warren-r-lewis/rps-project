@@ -28,6 +28,7 @@ function playGame() {
     }
     //*********************************ADD CODE HERE *************************************/
     // Display the Final Score from the properties stored in the Game object
+     
     console.log("Computer wins: " + game.countOfComputerWins + ", Player wins: " + game.countOfPlayerWins + ", Ties: " + game.countOfTies);
 
 }
@@ -46,6 +47,17 @@ function playRound(roundNumber) {
 
     //Play the Round
     var outcome = round.determineWinner();
+       switch(outcome){
+            case Outcomes.PLAYER_WINS:
+            this.incrementPlayerWins();
+            break;
+            case Outcomes.COMPUTER_WINS:
+            this.incrementComputerWins();
+            break;
+            case Outcomes.TIE:
+            this.incrementCountOfTies();
+            break; 
+       }
     //*********************************ADD CODE HERE *************************************/
     // Display the Round Results from the properties stored in the Round object
     console.log("round: " + roundNumber + " Winner: " + outcome);  
